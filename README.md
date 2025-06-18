@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# 💻 Shrey Raj Singh — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my professional portfolio showcasing my journey as a **Full Stack Developer** and **AI/ML Engineer**. This site is built using **React + TypeScript + Tailwind CSS**, and it's fully responsive across all devices.
 
-Currently, two official plugins are available:
+## 🌐 Hosted Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Visit the Live Site](https://your-hosted-portfolio-link.com)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Major Routes & Structure
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+| Route         | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| `/`           | **Homepage** — Contains Hero section, Skills, Projects, About, and Contact |
+| `/about`      | More detailed background, work philosophy, and career journey               |
+| `/skills`     | Categorized skills with direct section links (e.g., `#frontend`, `#cloud`)  |
+| `/projects`   | A curated list of major projects with images and descriptions               |
+| `/resume`     | Resume viewer and download button                                           |
+| `/contact`    | Contact form with Formspree integration (no backend needed)                 |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Sections Breakdown (Homepage)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Hero Section**: Brief intro with background image and CTA
+- **Skills Section**: Quick access to categorized skills
+- **Projects Section**: Responsive grid of project cards
+- **About Preview**: Brief bio with link to full About page
+- **Contact Form**: Simple form powered by Formspree (customized with modal + loading spinner)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React + TypeScript
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **Form Handling**: Formspree
+- **Deployment**: Vercel
+
+---
+
+## 📝 How to Use / Run
+
+### Local Development
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm run dev
