@@ -4,7 +4,7 @@ Welcome to my professional portfolio showcasing my journey as a **Full Stack Dev
 
 ## 🌐 Hosted Link
 
-🔗 [Visit the Live Site](https://your-hosted-portfolio-link.com)
+🔗 [Visit the Live Site](https://portfolio-shrey-raj-singhs-projects.vercel.app/)
 
 ---
 
@@ -46,7 +46,7 @@ Welcome to my professional portfolio showcasing my journey as a **Full Stack Dev
 ### Local Development
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/Shrey-raj-singh/portfolio.git
 cd your-repo
 npm install
 npm run dev
