@@ -6,32 +6,32 @@ const skillsList = [
     {
       title: "Frontend",
       path: "/skills",
-      icon: <Code2 />,
+      icon: <Code2 size={24}/>,
     },
     {
       title: "Backend",
       path: "/skills#backend",
-      icon: <Server />,
+      icon: <Server size={24}/>,
     },
     {
       title: "Databases",
       path: "/skills#databases",
-      icon: <Database />,
+      icon: <Database size={24}/>,
     },
     {
       title: "Cloud & DevOps",
       path: "/skills#cloud",
-      icon: <Cloud />,
+      icon: <Cloud size={24}/>,
     },
     {
       title: "AI / ML",
       path: "/skills#ai-ml",
-      icon: <Brain />,
+      icon: <Brain size={24}/>,
     },
     {
       title: "Mobile Apps",
       path: "/skills#mobile",
-      icon: <Smartphone />,
+      icon: <Smartphone size={24}/>,
     },
   ];
   
@@ -51,6 +51,8 @@ const SkillsSection = () => {
                             title={skill.title}
                             icon={skill.icon}
                             path={skill.path}
+                            description="Click to see related projects"
+                            col={true}
                         />
                     ))}
                 </div>
