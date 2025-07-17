@@ -18,7 +18,7 @@ const SkillCard = ({ title, icon, path, description, col }: SkillCardProps) => {
         <div className="text-white text-xl">{icon || <Code2 size={24} />}</div>
         <div>
           <p className="text-[16px] font-bold leading-tight">{title}</p>
-          {description===null?<></>:<p className="text-[14px] text-[#9CABBA] mt-2 leading-tight">
+          {description===null?<></>:<p className="text-[14px] text-[#9CABBA] mt-2 leading-tight line-clamp-3">
             {description}
           </p>}
         </div>

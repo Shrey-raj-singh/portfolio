@@ -45,7 +45,7 @@ const ContactPage = () => {
                     Get in touch
                 </p>
 
-                <p className="mt-2  text-[#9CABBA] leading-relaxed cursor-">
+                <p className="text-[12px] sm:text-[12px] md:[14px] text-[#9CABBA]">
                     I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
                     Feel free to reach out!
                 </p>

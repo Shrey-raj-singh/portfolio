@@ -46,20 +46,20 @@ const AboutPage = () => {
                     Shrey Raj Singh
                 </p>
 
-                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#9CABBA] leading-tight cursor-">
+                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#9CABBA] leading-tight">
                     Full Stack Developer & AI/ML Engineer
                 </p>
-                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#9CABBA] leading-tight cursor-">
+                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-[#9CABBA] leading-tight">
                     Raigarh, (C.G.)
                 </p>
             </div>
 
             <div className="w-full text-left mt-16">
                 <p className="text-[14px] sm:text-[18px] md:text-[22px] font-bold leading-tight text-white">
-                    About
+                    About Me
                 </p>
 
-                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed cursor-">
+                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed">
                     I am a highly motivated and skilled Full Stack Developer with a passion for creating innovative solutions.
                     With a strong background in both front-end and back-end development, I excel at building robust and scalable applications.
                     My expertise extends to AI and Machine Learning, where I leverage cutting-edge technologies to develop intelligent systems.
@@ -92,10 +92,10 @@ const AboutPage = () => {
                     Education & Certifications
                 </p>
 
-                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed cursor-">
+                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed">
                     Bachelor of Technology in Computer Science & Engineering
                 </p>
-                <p className="text-[10px] sm:text-[12px] md:text-[14px] text-[#9CABBA] leading-tight cursor-">
+                <p className="text-[10px] sm:text-[12px] md:text-[14px] text-[#9CABBA] leading-tight">
                     O.P. Jindal University, Raigarh (C.G.)
                 </p>
 
@@ -107,7 +107,7 @@ const AboutPage = () => {
                     Career Objective
                 </p>
 
-                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed cursor-">
+                <p className="mt-4 text-[12px] sm:text-[14px] md:text-[16px] text-white leading-relaxed">
                     To leverage my expertise in Full Stack Development and AI/ML to contribute to challenging projects that drive innovation
                     and create impactful solutions. I aim to work in a dynamic environment where I can continuously learn, grow, and make a
                     significant contribution to the team's success.

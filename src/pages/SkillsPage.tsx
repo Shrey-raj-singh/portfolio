@@ -1,76 +1,116 @@
+import { Bot, Cloud, Code2, Database, Server, Smartphone } from "lucide-react";
+import SkillCard from "../components/Home/skill-card";
+
+
+const coreSkillsList = [
+    {
+        title: "Frontend Development",
+        items: [
+            {
+                skillTitle: "React",
+                description: "Proficient in building dynamic and responsive user interfaces using React.",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+        ]
+    },
+    {
+        title: "Backend Development",
+        items: [
+            {
+                skillTitle: "Python",
+                description: "",
+                icon: <Server size={24} />,
+            },
+        ]
+    },
+    {
+        title: "Databases",
+        items: [
+            {
+                skillTitle: "Python",
+                description: "",
+                icon: <Database size={24} />,
+            },
+        ]
+    },
+    {
+        title: "Cloud & DevOps",
+        items: [
+            {
+                skillTitle: "Python",
+                description: "",
+                icon: <Cloud size={24} />,
+            },
+        ]
+    },
+    {
+        title: "AI/ML",
+        items: [
+            {
+                skillTitle: "Python",
+                description: "",
+                icon: <Bot size={24} />,
+            },
+        ]
+    },
+    {
+        title: "Mobile Development",
+        items: [
+            {
+                skillTitle: "Python",
+                description: "",
+                icon: <Smartphone size={24} />,
+            },
+        ]
+    },
+]
 
 
 const SkillsPage = () => {
     return (
-        <div className=" py-12 max-w-6xl mx-auto text-white">
-      {/* Page Header */}
-      <h1 className="text-4xl font-bold text-center text-blue-400">My Skill Set</h1>
 
-      {/* Frontend */}
-      <section className="pt-20" id="frontend">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">Frontend</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>React.js / Next.js</li>
-          <li>TypeScript & JavaScript (ES6+)</li>
-          <li>Tailwind CSS, Chakra UI, Material UI</li>
-          <li>Figma to HTML/CSS conversion</li>
-        </ul>
-      </section>
+        <main className="min-h-screen flex flex-col  px-[10%] text-center pb-24">
+            <div className="text-left mt-8">
+                <p className="text-[24px] sm:text-[28px] md:text-[32px] font-bold text-white">Skills</p>
+                <p className="text-[12px] sm:text-[12px] md:[14px] text-[#9CABBA]">
+                    A comprehensive overview of my technical capabilities across various domains.
+                </p>
 
-      {/* Backend */}
-      <section className="pt-20" id="backend">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">Backend</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>Node.js (Express, Fastify)</li>
-          <li>Python (Flask, FastAPI)</li>
-          <li>Authentication, APIs, WebSockets</li>
-          <li>REST & GraphQL APIs</li>
-        </ul>
-      </section>
 
-      {/* Databases */}
-      <section className="pt-20" id="databases">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">Databases</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>PostgreSQL, MySQL, SQLite</li>
-          <li>MongoDB, Redis, Neo4j</li>
-          <li>ORMs: Prisma, Mongoose, SQLAlchemy</li>
-        </ul>
-      </section>
+                {coreSkillsList.map((skills) => (<div className="w-full text-left mt-16">
 
-      {/* Cloud & DevOps */}
-      <section className="pt-20" id="cloud">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">Cloud & DevOps</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>Docker, GitHub Actions, Render</li>
-          <li>AWS (S3, EC2, Lambda, RDS)</li>
-          <li>Firebase, Vercel, Netlify</li>
-          <li>CI/CD, Deployment Automation</li>
-        </ul>
-      </section>
+                    <p className="text-[18px] sm:text-[20px] md:[22px] text-white">
+                        {skills.title}
+                    </p>
+                    <div className="relative w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                        {skills.items.map((item, index) => (
+                            <SkillCard
+                                key={index}
+                                title={item.skillTitle}
+                                icon={item.icon}
+                                path={""}
+                                description={item.description}
+                                col={true}
+                            />
+                        ))}
+                    </div>
+                </div>))}
 
-      {/* AI/ML */}
-      <section className="pt-20" id="ai-ml">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">AI / Machine Learning</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>Python (Pandas, NumPy, Scikit-learn)</li>
-          <li>Deep Learning: TensorFlow, PyTorch</li>
-          <li>Hugging Face Transformers</li>
-          <li>ML Deployment with FastAPI & Streamlit</li>
-        </ul>
-      </section>
 
-      {/* Mobile */}
-      <section className="pt-20" id="mobile">
-        <h2 className="text-2xl font-semibold text-blue-300 mb-4">Mobile Apps</h2>
-        <ul className="list-disc list-inside text-gray-300">
-          <li>Flutter (Dart)</li>
-          <li>Firebase Auth, Firestore Integration</li>
-          <li>Cross-platform iOS + Android</li>
-        </ul>
-      </section>
-    </div>
+            </div>
+        </main>
     );
 }
+
 
 export default SkillsPage;
