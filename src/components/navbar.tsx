@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-gray-700 focus:outline-none hover:cursor-pointer"
             >
               <svg
                 className="h-6 w-6"

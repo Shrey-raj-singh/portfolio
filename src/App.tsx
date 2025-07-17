@@ -4,7 +4,7 @@ import Navbar from './components/navbar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
-import ProjectsIndex from './pages/projects/Index';
+import ProjectsIndex from './pages/ProjectPage';
 import FrontendProject from './pages/projects/frontend';
 import FrontendProjectDeatil from './pages/projects/frontend/frontend[id]';
 import ContactPage from './pages/ContactPage';
