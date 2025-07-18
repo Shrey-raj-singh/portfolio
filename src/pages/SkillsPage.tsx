@@ -7,17 +7,62 @@ const coreSkillsList = [
         title: "Frontend Development",
         items: [
             {
+                skillTitle: "JavaScript",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "TypeScript",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "HTML5",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "CSS3",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
                 skillTitle: "React",
                 description: "Proficient in building dynamic and responsive user interfaces using React.",
                 icon: <Code2 size={24} />,
             },
             {
-                skillTitle: "",
+                skillTitle: "Next",
                 description: "",
                 icon: <Code2 size={24} />,
             },
             {
-                skillTitle: "",
+                skillTitle: "Tailwind CSS",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "Responsive Design",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "Redux",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "Recoil",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "Zustand",
+                description: "",
+                icon: <Code2 size={24} />,
+            },
+            {
+                skillTitle: "React-Query",
                 description: "",
                 icon: <Code2 size={24} />,
             },
